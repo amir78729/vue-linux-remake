@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: #292929">
+  <div style="background-color: #292929;    border-bottom:5px solid rgb(242,169,56);" class="justify-content-center align-content-center">
     <transition name="fade-slow" appear>
       <div class="linus">
         <section dir="rtl" class="bg row justify-content-center align-content-center">
@@ -41,10 +41,15 @@
     display: flex;
     align-items:center;
     justify-content:center;
-    border-bottom:10px solid rgb(242,169,56);
+    /*border-bottom:5px solid rgb(242,169,56);*/
   }
   .linus {
     background: #292929 url("https://cdn.discordapp.com/attachments/732234196487241741/740626481356734847/linus-torvalds.svg") no-repeat center / 100%;
+    transition: all 0.5s ease;
+  }
+  .linus:hover {
+    background: #292929 url("https://cdn.discordapp.com/attachments/732234196487241741/740626481356734847/linus-torvalds.svg") no-repeat center / 96%;
+    transition: all 0.5s ease;
   }
   .title {
     cursor: default;
