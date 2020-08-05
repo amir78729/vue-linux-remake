@@ -1,7 +1,13 @@
 <template>
   <div>
     <h2>کارگاه‌ها و سخنرانی‌ها</h2>
-    <div class="row align-content-center" style="padding: 0 20px 0 20px">
+    <div class="row align-content-center" style="padding: 0 80px 0 80px">
+      <div class="col-md-6 col-sm-12">
+        <grid-workshop-item></grid-workshop-item>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <grid-workshop-item ></grid-workshop-item>
+      </div>
       <div class="col-md-6 col-sm-12">
         <grid-workshop-item></grid-workshop-item>
       </div>
