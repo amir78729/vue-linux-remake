@@ -29,6 +29,7 @@
   .header {
     background-color: #521C39;
   }
+
   .header-divider {
     border-left: 2px solid #e4b22b;
     width: 1px;

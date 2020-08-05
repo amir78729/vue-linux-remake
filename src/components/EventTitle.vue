@@ -1,26 +1,32 @@
 <template>
-  <div class="bg">
-    <transition name="fade" appear>
-      <section dir="rtl" class="row justify-content-center align-content-center">
-        <h2 class="title-horizontal">انجمن علمی دانشکده مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر با همکاری اسنپ برگزار می کند:</h2>
-        <h1 class="title" >
+  <div style="background-color: #292929">
+    <transition name="fade-slow" appear>
+      <div class="linus">
+        <section dir="rtl" class="bg row justify-content-center align-content-center">
+          <transition name="fade" appear>
+            <div dir="rtl" class="row justify-content-center align-content-center">
+              <h2 class="title-horizontal">انجمن علمی دانشکده مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر با همکاری اسنپ برگزار می کند:</h2>
+              <h1 class="title" >
             <span class="title-yazdahomin">
             یازدهمین دوره
             </span>
-          <br>
-          <span class="title-jashnvareh">
+                <br>
+                <span class="title-jashnvareh">
             جشنواره
             </span>
-          <br>
-          <span class="title-linux">
+                <br>
+                <span class="title-linux">
             لینوکس
             </span>
-          <br>
-          <span class="title-amirkabir">
+                <br>
+                <span class="title-amirkabir">
             امیرکبیر
             </span>
-        </h1>
-      </section>
+              </h1>
+            </div>
+          </transition>
+        </section>
+      </div>
     </transition>
   </div>
 </template>
@@ -35,13 +41,14 @@
     display: flex;
     align-items:center;
     justify-content:center;
-    background: #292929 url("https://cdn.discordapp.com/attachments/732234196487241741/740626481356734847/linus-torvalds.svg") no-repeat center / 70%;
     border-bottom:10px solid rgb(242,169,56);
   }
   .linus {
-    /*background-image: url("./src/assets/img/title.png");*/
+    background: #292929 url("https://cdn.discordapp.com/attachments/732234196487241741/740626481356734847/linus-torvalds.svg") no-repeat center / 100%;
   }
   .title {
+    cursor: default;
+
     font-size: 145px;
     font-weight:bolder;
     line-height: 70px;
@@ -65,7 +72,8 @@
     opacity: 0;
   }
   .fade-enter-active {
-    transition: opacity 500ms;
+    transition: opacity 1000ms;
+    transition-delay: 750ms;
   }
   .fade-leave {
 
@@ -73,6 +81,38 @@
   .fade-leave-active {
 
   }
+
+
+  .fade-slow-enter {
+    opacity: 0;
+  }
+  .fade-slow-enter-active {
+    animation: slide-in 1s ease-out;
+    transition: opacity 1000ms;
+  }
+  .fade-slow-leave {
+
+  }
+  .fade-slow-leave-active {
+
+  }
+  @keyframes slide-in {
+    from{
+      transform: translateX(-20px);
+    }
+    to{
+      transform: translateX(0);
+    }
+  }
+  @keyframes slide-out {
+    from{
+      transform: translateX(0px);
+    }
+    to{
+      transform: translateX(0);
+    }
+  }
+
   .title-horizontal {
     margin-bottom: 60px;
     margin-top: 15px;
@@ -85,5 +125,6 @@
     text-orientation: mixed;
     height:390px;
     margin-left:10px;
+    cursor: default;
   }
 </style>
