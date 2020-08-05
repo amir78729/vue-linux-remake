@@ -1,10 +1,10 @@
 <template>
   <div class="info">
     <div>
-      <transition name="fade-slow" onEntered>
+      <transition name="fade-slow" appear>
         <h1>درباره جشنواره لینوکس امیرکبیر</h1>
       </transition>
-      <transition name="fade" onEntering>
+      <transition name="fade" appear>
         <p>
           جشنواره‌ی لینوکس امیرکبیر معتبرترین رویداد سالانه‌ و دانشگاهی‌ مرتبط با لینوکس است که هر سال در دانشگاه صنعتی امیرکبیر برگزار می‌شود. این جشنواره شامل کارگاه‌ها و ارائه‌های متعددی در سطوح مبتدی و پیشرفته با موضوعات مرتبط با سیستم عامل متن‌باز لینوکس است. در این جشنواره مجموعه‌ای از ارائه‌ها و کارگاه‌ها ویژه‌ی کاربران مبتدی و حرفه‌ای لینوکس با موضوعاتی مانند مقدمات لینوکس، کرنل، امنیت، برنامه‌نویسی، شبکه، مدیریت سیستم لینوکس و... برگزار می‌شوند.
         </p>
@@ -31,7 +31,7 @@
     transition: all 0.5s ease;
   }
   .info:hover {
-    background: #521C39 url("https://raw.githubusercontent.com/AUT-linux-festival/LinuxFest-Website-Frontend/master/src/assets/img/pinguin.png") no-repeat center / 105%;
+    /*background: #521C39 url("https://raw.githubusercontent.com/AUT-linux-festival/LinuxFest-Website-Frontend/master/src/assets/img/pinguin.png") no-repeat center / 105%;*/;
     transition: all 0.5s ease;
   }
 
