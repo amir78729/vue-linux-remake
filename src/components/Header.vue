@@ -14,7 +14,6 @@
           <div class="header-divider"></div>
           <button class="btn header-regular-btn">خانه</button>
         </div>
-
       </div>
     </nav>
   </div>
@@ -36,6 +35,7 @@
     margin: 0 3px 0 3px;
   }
   .header-register-btn {
+    color: white;
     margin-right: 15px;
     background-color: #e4b22b;
     font-size: 14px;
