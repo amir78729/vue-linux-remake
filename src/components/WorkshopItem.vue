@@ -17,6 +17,7 @@
         names: ['name1', 'name2', 'name3']
       }
     },
+    props: ['title', 'names']
   }
 </script>
 
