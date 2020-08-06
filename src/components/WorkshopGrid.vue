@@ -30,17 +30,17 @@
             teacher: [
               {
                 teacherName: 'علیرضا بختیاری',
-                teacherInfo: '',
+                teacherInfo: 'دانشجوی مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر',
                 teacherImageURL: '',
               },
               {
                 teacherName: 'شایان شقفی',
-                teacherInfo: '',
+                teacherInfo: 'دانشجوی مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر',
                 teacherImageURL: '',
               },
               {
                 teacherName: 'محمد فاطمی',
-                teacherInfo: '',
+                teacherInfo: 'دانشجوی مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر',
                 teacherImageURL: '',
               },
             ],
@@ -51,7 +51,7 @@
             teacher: [
               {
                 teacherName: 'احمد انواری',
-                teacherInfo: '',
+                teacherInfo: 'Back-end Developer at Snapp, Bsc. Student at Amirkabir University of Technology, ارائه دهنده در سه دوره پیشین جشنواره لینوکس امیرکبیر و مدرس سایت مکتب خونه',
                 teacherImageURL: '',
               },
             ],
@@ -62,7 +62,7 @@
             teacher: [
               {
                 teacherName: 'محمد کریمی',
-                teacherInfo: '',
+                teacherInfo: 'Senior Cloud Engineer at Snapp, Former Site Reliability Engineer at Quiz of Kings and IT student at Amirkabir University of Technology',
                 teacherImageURL: '',
               },
             ],
@@ -73,7 +73,7 @@
             teacher: [
               {
                 teacherName: 'بهادر بخشی',
-                teacherInfo: '',
+                teacherInfo: 'استاد دانشکده مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر',
                 teacherImageURL: '',
               },
             ],
@@ -84,7 +84,7 @@
             teacher: [
               {
                 teacherName: 'احسان عدالت',
-                teacherInfo: '',
+                teacherInfo: 'دانشجوی دکترای دانشکده مهندسی کامپیوتر دانشگاه امیرکبیر',
                 teacherImageURL: '',
               },
             ],
@@ -95,7 +95,7 @@
             teacher: [
               {
                 teacherName: 'پرهام الوانی',
-                teacherInfo: '',
+                teacherInfo: 'Back-end (Golang) Developer at Snapp, PhD Student at Amirkabir University of Technology',
                 teacherImageURL: '',
               },
             ],
@@ -106,7 +106,7 @@
             teacher: [
               {
                 teacherName: 'امید رجب‌آقا',
-                teacherInfo: '',
+                teacherInfo: 'Senior Cloud Engineer at Snapp. Former Site Reliability Engineer at Quiz of Kings',
                 teacherImageURL: '',
               },
             ],
@@ -117,7 +117,7 @@
             teacher: [
               {
                 teacherName: 'حسین مرادقلی',
-                teacherInfo: '',
+                teacherInfo: 'Cloud Team Lead at Snapp, former CTO at Snapp',
                 teacherImageURL: '',
               },
             ],
@@ -128,12 +128,12 @@
             teacher: [
               {
                 teacherName: 'محمد عبدلی‌راد',
-                teacherInfo: '',
+                teacherInfo: 'Senior Software and DevOps Engineer at Snapp',
                 teacherImageURL: '',
               },
               {
-                teacherName: 'نرگس محمدی',
-                teacherInfo: '',
+                teacherName: 'نرگس احمدی',
+                teacherInfo: 'DevOps Engineer at Snapp, former Linux System Engineer at Ztel',
                 teacherImageURL: '',
               },
             ],
