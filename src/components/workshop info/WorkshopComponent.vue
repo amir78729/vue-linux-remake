@@ -4,13 +4,21 @@
       <h1>{{ currentWorkshop.title }}</h1>
     </div>
     <div class="info row">
-        <div class="col-sm-8 bg-info">
+      <div class="col-sm-8 bg-info">
 
-        </div>
+      </div>
       <div class="col-sm-4 bg-danger">
-        <app-teacher-info>
+        <h2 v-if="currentWorkshop.teacher.length === 1">ارائه دهنده</h2>
+        <h2 v-if="currentWorkshop.teacher.length !== 1"> ارائه دهنده ها</h2>
+        <div class="row d-flex justify-content-between">
+          <button @click="teacherIndexDecrement"><</button>
+          <app-teacher-info
+            :teachers="currentWorkshop.teacher"
+            :index="teacherIndex">
 
-        </app-teacher-info>
+          </app-teacher-info>
+          <button @click="teacherIndexIncrement">></button>
+        </div>
       </div>
     </div>
     <button class="btn btn-dark" @click="setCurrentWorkshop(0)">k</button>
@@ -38,7 +46,13 @@
     methods: {
       setCurrentWorkshop(index) {
         this.currentWorkshop = this.data[index];
-      }
+      },
+      teacherIndexIncrement(){
+        this.teacherIndex++;
+      },
+      teacherIndexDecrement(){
+        this.teacherIndex--;
+      },
     }
   }
 </script>
