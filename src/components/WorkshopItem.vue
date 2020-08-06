@@ -1,6 +1,7 @@
 <template>
   <div dir="rtl" class="row item">
-    <div class="col-xl-5 col-lg-5 col-md-4 col-sm-5 col-xs-6 bg-info item-img">
+    <div class="col-xl-5 col-lg-5 col-md-4 col-sm-5 col-xs-6 bg-info item-img" :style="{backgroundImage: `url(${imageURL})`}">
+
     </div>
     <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-xs-6 item-text" style="position: relative;">
       <h4 style="font-weight: bolder; font-size: 20px; text-align: center; margin-bottom: -15px">{{ title }}</h4>
@@ -27,11 +28,12 @@
     data() {
       return {
         // hasOneTeacher: true,
-        title: 'عنوان',
-        names: ['name1', 'name2', 'name3']
+        // title: 'عنوان',
+        // names: ['name1', 'name2', 'name3'],
+        // imageURL: 'https://cdn.hipwallpaper.com/i/72/14/7qMgZu.jpg'
       }
     },
-    props: ['title', 'names']
+    props: ['title', 'names', 'imageURL']
   }
 </script>
 
@@ -64,13 +66,18 @@
     text-align: right;
   }
   .item-img {
+    /*background: url(${this.imageURL}) no-repeat center / 250%;*/
     border-radius: 0 20px 20px 0;
     transition: all 0.3s;
     border-left: solid 2px white;
     height: inherit;
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: center;
   }
   .item-img:hover {
     filter: brightness(0.8);
+    background-size: 260%;
   }
   .button {
     border-radius: 4px;
