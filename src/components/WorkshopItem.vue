@@ -54,7 +54,7 @@
     border-radius: 20px;
   }
   .item:hover .item-img {
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
     transition: all 0.3s;
     border-left: solid 2px #e4b22b;
   }
@@ -64,7 +64,7 @@
     text-align: right;
   }
   .item-img {
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0 20px 20px 0;
     transition: all 0.3s;
     border-left: solid 2px white;
     height: inherit;

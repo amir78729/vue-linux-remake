@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" style="box-shadow: 0 0 10px 0 black">
     <nav class="navbar header">
       <div class="collapse navbar-collapse d-flex header container-fluid" id="navbarSupportedContent">
         <div class="row col-md-8">

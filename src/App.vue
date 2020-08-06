@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-header style="position: fixed; width: 100%"></app-header>
+    <app-header style="position: fixed; width: 100%" class="always-on-top"></app-header>
     <app-event-title></app-event-title>
     <app-about-event></app-about-event>
     <app-workshop-grid></app-workshop-grid>
@@ -30,5 +30,8 @@
 <style>
   body {
     font-family: 'iransans';
+  }
+  .always-on-top {
+    z-index: 999999 !important;
   }
 </style>
