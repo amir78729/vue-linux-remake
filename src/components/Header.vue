@@ -2,12 +2,12 @@
   <div class="" style="box-shadow: 0 0 10px 0 black">
     <nav class="navbar header">
       <div class="collapse navbar-collapse d-flex header container-fluid" id="navbarSupportedContent">
-        <div class="row col-md-8">
+        <div class="row col-md-8 col-sm-9">
           <button class="btn header-register-btn">ثبت نام کارگاه‌ها</button>
           <div class="header-divider"></div>
           <button class="btn header-regular-btn">ورود به حساب کاربری</button>
         </div>
-        <div class="col-md-4 row">
+        <div class="col-md-4 col-sm-3 row">
           <button class="btn header-regular-btn">کارگاه‌ها و سخنرانی‌ها</button>
           <div class="header-divider"></div>
           <button class="btn header-regular-btn">درباره جشنواره</button>

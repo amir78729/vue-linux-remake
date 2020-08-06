@@ -1,9 +1,8 @@
 <template>
   <div dir="rtl" class="row item">
-    <div class="col-xl-5 col-lg-5 col-md-4 col-sm-5 col-xs-6 bg-info item-img" :style="{backgroundImage: `url(${imageURL})`}">
-
+    <div class="col-xl-5 col-lg-5 col-md-4 col-sm-5 col-xs-6 bg-dark item-img d-flex" :style="{backgroundImage: `url(${imageURL})`}">
     </div>
-    <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-xs-6 item-text" style="position: relative;">
+    <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-xs-6 item-text" style="position: relative;cursor: default">
       <h4 style="font-weight: bolder; font-size: 20px; text-align: center; margin-bottom: -15px">{{ title }}</h4>
       <hr style="background-color: #e4b22b; margin-bottom: 10px">
       <div>
@@ -74,12 +73,13 @@
     height: inherit;
     background-repeat: no-repeat;
     background-size: 250%;
+    /*object-fit: fill;*/
     background-position: center;
     filter: brightness(0.8);
   }
   .item-img:hover {
     filter: brightness(1);
-    background-size: 260%;
+    background-size: 270%;
   }
   .button {
     border-radius: 4px;
