@@ -9,10 +9,11 @@
       <div>
         <div>
           <div class="row" style="margin-right: 5px">
-            <h5 style="font-size: 15px" v-if="names.length === 1">مدرس :</h5>
+            <h5 style="font-size: 15px" v-if="teachers.length === 1">مدرس :</h5>
             <h5 style="font-size: 15px" v-else>مدرسین :</h5>
           </div>
-          <h5 style="font-size: 18px" v-for="name in names">{{ name }}</h5>
+<!--          <h5 style="font-size: 18px" v-for="name in names">{{ name }}</h5>-->
+          <h5 style="font-size: 18px" v-for="teacher in teachers">{{ teacher.teacherName }}</h5>
         </div>
       </div>
       <div style="position: absolute; bottom: 0; width: calc(100% - 60px); align-content: center ; margin: 30px 0px 30px 30px">
@@ -33,7 +34,7 @@
         // imageURL: 'https://cdn.hipwallpaper.com/i/72/14/7qMgZu.jpg'
       }
     },
-    props: ['title', 'names', 'imageURL']
+    props: ['title', 'imageURL', 'teachers']
   }
 </script>
 
