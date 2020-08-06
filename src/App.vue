@@ -1,8 +1,8 @@
 <template>
   <div>
-<!--    <app-header></app-header>-->
-<!--    <app-event-title></app-event-title>-->
-<!--    <app-about-event></app-about-event>-->
+    <app-header style="position: fixed; width: 100%"></app-header>
+    <app-event-title></app-event-title>
+    <app-about-event></app-about-event>
     <app-workshop-grid></app-workshop-grid>
   </div>
 </template>

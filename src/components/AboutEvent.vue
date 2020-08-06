@@ -15,7 +15,7 @@
 <script>
 
 </script>
-<style>
+<style scoped>
   h1 {
     color: #e4b22b;
     font-weight: bolder;

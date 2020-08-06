@@ -2,7 +2,7 @@
   <div style="background-color: #292929;    border-bottom:5px solid rgb(242,169,56);" class="justify-content-center align-content-center">
     <transition name="fade-slow" appear>
       <div class="linus">
-        <section dir="rtl" class="bg row justify-content-center align-content-center">
+        <section dir="rtl" style="padding-top: 100px" class="bg row justify-content-center align-content-center">
           <transition name="fade" appear>
             <div dir="rtl" class="row justify-content-center align-content-center">
               <h2 class="title-horizontal">انجمن علمی دانشکده مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر با همکاری اسنپ برگزار می کند:</h2>

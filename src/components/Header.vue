@@ -25,7 +25,7 @@
   }
 </script>
 
-<style>
+<style >
   .header {
     background-color: #521C39;
   }
