@@ -4,22 +4,13 @@
 <!--    <h1>{{items}}</h1>-->
 
     <h2 style="cursor: default">کارگاه‌ها و سخنرانی‌ها</h2>
-    <div class="row align-content-center" style="padding: 0 80px 0 80px">
-      <div class="col-md-6 col-sm-12" v-for="(item, index) in items">
+    <div class="row align-content-center" style="padding: 0 80px 0 80px; justify-content: center">
+      <div class="col-md-6 col-sm-12" v-for="item in items">
         <grid-workshop-item
         :title="item.title"
         :imageURL="item.imageURL"
         :teachers="item.teacher"></grid-workshop-item>
       </div>
-<!--      <div class="col-md-6 col-sm-12">-->
-<!--        <grid-workshop-item ></grid-workshop-item>-->
-<!--      </div>-->
-<!--      <div class="col-md-6 col-sm-12">-->
-<!--        <grid-workshop-item></grid-workshop-item>-->
-<!--      </div>-->
-<!--      <div class="col-md-6 col-sm-12">-->
-<!--        <grid-workshop-item ></grid-workshop-item>-->
-<!--      </div>-->
     </div>
   </div>
 </template>
