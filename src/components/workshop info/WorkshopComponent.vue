@@ -7,21 +7,25 @@
       <div class="col-sm-8 bg-info">
 
       </div>
-      <div class="col-sm-4 bg-danger">
-        <h2 v-if="currentWorkshop.teacher.length === 1">ارائه دهنده</h2>
-        <h2 v-if="currentWorkshop.teacher.length !== 1"> ارائه دهنده ها</h2>
+      <div class="col-sm-4 " style="padding: 10px">
+        <div class="presenters">
+          <h2 v-if="currentWorkshop.teacher.length === 1">ارائه دهنده</h2>
+          <h2 v-if="currentWorkshop.teacher.length !== 1"> ارائه دهنده ها</h2>
+        </div>
         <div class="row d-flex justify-content-between">
-          <button @click="teacherIndexDecrement"><</button>
-          <app-teacher-info
-            :teachers="currentWorkshop.teacher"
-            :index="teacherIndex">
+          <button class="btn changeTeacher" @click="teacherIndexDecrement"><</button>
+          <transition name="slide" mode="out-in">
+            <app-teacher-info
+              :teachers="currentWorkshop.teacher"
+              :index="teacherIndex">
 
-          </app-teacher-info>
-          <button @click="teacherIndexIncrement">></button>
+            </app-teacher-info>
+          </transition>
+          <button class="btn changeTeacher" @click="teacherIndexIncrement">></button>
         </div>
       </div>
     </div>
-    <button class="btn btn-dark" @click="setCurrentWorkshop(0)">k</button>
+    <button class="btn btn-dark" @click="setCurrentWorkshop(8)">k</button>
   </div>
 </template>
 
@@ -48,10 +52,12 @@
         this.currentWorkshop = this.data[index];
       },
       teacherIndexIncrement(){
-        this.teacherIndex++;
+        if (this.teacherIndex !== this.currentWorkshop.teacher.length-1)
+          this.teacherIndex++;
       },
       teacherIndexDecrement(){
-        this.teacherIndex--;
+        if (this.teacherIndex !== 0)
+          this.teacherIndex--;
       },
     }
   }
@@ -92,5 +98,62 @@
     border-radius: 30px;
 
     height: 500px;
+  }
+  .presenters{
+    cursor: default;
+    color: #e4b22b;
+    text-align: center;
+    font-weight: bolder;
+
+  }
+  .presenters h2{
+    font-size: 28px;
+    padding: 10px;
+  }
+  .changeTeacher {
+    color: #FFFFFF;
+  }
+  .changeTeacher:hover {
+    color: #e4b22b;
+  }
+
+
+
+
+
+
+
+
+  .slide-enter{
+    opacity: 0;
+  }
+  .slide-enter-active{
+    animation: slide-in 1s ease-out forwards;
+    opacity: 1;
+    transition: opacity 1s;
+  }
+  .slide-leave{
+    opacity: 1;
+  }
+  .slide-leave-active{
+    animation: slide-out 1s ease-out forwards;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  @keyframes slide-in {
+    from{
+      transform: translateX(-20px);
+    }
+    to{
+      transform: translateX(0);
+    }
+  }
+  @keyframes slide-out {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(+20px);
+    }
   }
 </style>

@@ -38,17 +38,17 @@
               {
                 teacherName: 'علیرضا بختیاری',
                 teacherInfo: 'دانشجوی مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae4fcc726a17d72f5a75f/mainPic.png',
               },
               {
                 teacherName: 'شایان شقفی',
                 teacherInfo: 'دانشجوی مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae507c726a17d72f5a760/mainPic.png',
               },
               {
                 teacherName: 'محمد فاطمی',
                 teacherInfo: 'دانشجوی مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae51ac726a17d72f5a761/mainPic.png',
               },
             ],
             imageURL: 'https://d341ezm4iqaae0.cloudfront.net/assets/2020/01/12193251/How-to-Run-Better-Office-Meetings-1.jpg',
@@ -59,7 +59,7 @@
               {
                 teacherName: 'احمد انواری',
                 teacherInfo: 'Back-end Developer at Snapp, Bsc. Student at Amirkabir University of Technology, ارائه دهنده در سه دوره پیشین جشنواره لینوکس امیرکبیر و مدرس سایت مکتب خونه',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae529c726a17d72f5a762/mainPic.png',
               },
             ],
             imageURL: 'https://cdn.hipwallpaper.com/i/72/14/7qMgZu.jpg',
@@ -70,7 +70,7 @@
               {
                 teacherName: 'محمد کریمی',
                 teacherInfo: 'Senior Cloud Engineer at Snapp, Former Site Reliability Engineer at Quiz of Kings and IT student at Amirkabir University of Technology',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae568c726a17d72f5a766/mainPic.png',
               },
             ],
             imageURL: 'https://enterprise-cio.com/wp-content/uploads/sites/4/2020/03/cloud-database-over-computer-chip-moterboard-background-data-center-vector-id839394694.jpg',
@@ -81,7 +81,7 @@
               {
                 teacherName: 'بهادر بخشی',
                 teacherInfo: 'استاد دانشکده مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae542c726a17d72f5a763/mainPic.png',
               },
             ],
             imageURL: 'https://tuxnews.it/wp-content/uploads/2017/05/kernel-4.12.jpg',
@@ -92,7 +92,7 @@
               {
                 teacherName: 'احسان عدالت',
                 teacherInfo: 'دانشجوی دکترای دانشکده مهندسی کامپیوتر دانشگاه امیرکبیر',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae55bc726a17d72f5a765/mainPic.png',
               },
             ],
             imageURL: 'https://raw.githubusercontent.com/dorianpro/kaliwallpapers/master/kali-linux-wallpaper-v4.png',
@@ -103,7 +103,7 @@
               {
                 teacherName: 'پرهام الوانی',
                 teacherInfo: 'Back-end (Golang) Developer at Snapp, PhD Student at Amirkabir University of Technology',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae54dc726a17d72f5a764/mainPic.png',
               },
             ],
             imageURL: 'https://www.multapplied.net/wp-content/uploads/2019/11/header-virtualization-best-practice.jpg',
@@ -114,7 +114,7 @@
               {
                 teacherName: 'امید رجب‌آقا',
                 teacherInfo: 'Senior Cloud Engineer at Snapp. Former Site Reliability Engineer at Quiz of Kings',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae57cc726a17d72f5a768/mainPic.png',
               },
             ],
             imageURL: 'https://images5.alphacoders.com/874/874813.jpg',
@@ -125,7 +125,7 @@
               {
                 teacherName: 'حسین مرادقلی',
                 teacherInfo: 'Cloud Team Lead at Snapp, former CTO at Snapp',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae574c726a17d72f5a767/mainPic.png',
               },
             ],
             imageURL: 'https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80',
@@ -136,12 +136,12 @@
               {
                 teacherName: 'محمد عبدلی‌راد',
                 teacherInfo: 'Senior Software and DevOps Engineer at Snapp',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae587c726a17d72f5a769/mainPic.png',
               },
               {
                 teacherName: 'نرگس احمدی',
                 teacherInfo: 'DevOps Engineer at Snapp, former Linux System Engineer at Ztel',
-                teacherImageURL: '',
+                teacherImageURL: 'http://skillcenter.aut.ac.ir/linuxfestapi/uploads/2019/teachers/5e3ae596c726a17d72f5a76a/mainPic.png',
               },
             ],
             imageURL: 'http://thecookiezen.com/blog/images/ha-1.jpg',
