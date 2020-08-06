@@ -1,17 +1,24 @@
 <template>
   <div dir="rtl" class="row item">
-    <div class="col-xl-5 col-lg-5 col-md-4 col-sm-6 col-xs-6 bg-info item-img">
+    <div class="col-xl-5 col-lg-5 col-md-4 col-sm-5 col-xs-6 bg-info item-img">
     </div>
-    <div class="col-xl-7 col-lg-7 col-md-8 col-sm-6 col-xs-6 item-text">
+    <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-xs-6 item-text" style="position: relative;">
       <h4 style="font-weight: bolder; font-size: 20px; text-align: center; margin-bottom: -15px">{{ title }}</h4>
       <hr style="background-color: #e4b22b; margin-bottom: 10px">
-      <div class="row">
-        <h5 v-if="names.length === 1">مدرس</h5>
-        <h5 v-else>مدرسین</h5>
+      <div>
+        <div>
+          <div class="row" style="margin-right: 5px">
+            <h5 style="font-size: 15px" v-if="names.length === 1">مدرس :</h5>
+            <h5 style="font-size: 15px" v-else>مدرسین :</h5>
+          </div>
+          <h5 style="font-size: 18px" v-for="name in names">{{ name }}</h5>
+        </div>
       </div>
-      <h5 style="font-size: 18px" v-for="name in names">{{ name }}</h5>
-      <button dir="rtl" class="btn button" style="align-content: center"><span>توضیحات بیشتر </span></button>
+      <div style="position: absolute; bottom: 0; width: calc(100% - 60px); align-content: center ; margin: 30px 0px 30px 30px">
+        <button dir="rtl" class="btn button" style="align-content: center"><span>توضیحات </span></button>
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -34,12 +41,13 @@
     color: white;
     transition: all 0.3s;
     border-radius: 20px;
+    height: 270px;
     margin: 10px 10px 30px 10px;
   }
   .item:hover {
     background-color: #521C39;
     color: #e4b22b;
-    box-shadow: 0 0 5px 0 black;
+    box-shadow: 0 0 15px 0 black;
     border-radius: 10px;
   }
   .item:hover .button{
@@ -51,6 +59,7 @@
     border-left: solid 2px #e4b22b;
   }
   .item-text {
+    min-width: 150px;
     padding: 30px;
     text-align: right;
   }
@@ -58,6 +67,7 @@
     border-radius: 0px 20px 20px 0px;
     transition: all 0.3s;
     border-left: solid 2px white;
+    height: inherit;
   }
   .item-img:hover {
     filter: brightness(0.8);

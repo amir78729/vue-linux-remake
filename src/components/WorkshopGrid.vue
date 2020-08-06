@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h2>کارگاه‌ها و سخنرانی‌ها</h2>
+  <div style="    border-bottom:5px solid rgb(242,169,56);">
+    <h2 style="cursor: default">کارگاه‌ها و سخنرانی‌ها</h2>
     <div class="row align-content-center" style="padding: 0 80px 0 80px">
       <div class="col-md-6 col-sm-12" v-for="(item, index) in items">
         <grid-workshop-item
@@ -39,31 +39,31 @@
           },
           {
             title: 'Cloud: A solution to infrastructure problem',
-            names: ['علیرضا بختیاری','شایان شقفی','محمد فاطمی']
+            names: ['محمد کریمی']
           },
           {
             title: 'Kernel',
-            names: ['علیرضا بختیاری','شایان شقفی','محمد فاطمی']
+            names: ['بهادر بخشی']
           },
           {
             title: 'Penetration Testing with Kali Linux',
-            names: ['علیرضا بختیاری','شایان شقفی','محمد فاطمی']
+            names: ['احسان عدالت']
           },
           {
             title: 'Virtualization',
-            names: ['علیرضا بختیاری','شایان شقفی','محمد فاطمی']
+            names: ['پرهام الوانی']
           },
           {
             title: 'Container Orchestration in Cloud',
-            names: ['علیرضا بختیاری','شایان شقفی','محمد فاطمی']
+            names: ['امید رجب‌آقا']
           },
           {
             title: 'اسنپ‌کلود:‌ دلایل بنیادین و نحوه ساخت',
-            names: ['علیرضا بختیاری','شایان شقفی','محمد فاطمی']
+            names: ['حسین مرادقلی']
           },
           {
             title: 'Service Discovery',
-            names: ['علیرضا بختیاری','شایان شقفی','محمد فاطمی']
+            names: ['محمد عبدلی‌راد','نرگس احمدی']
           },
         ]
       }

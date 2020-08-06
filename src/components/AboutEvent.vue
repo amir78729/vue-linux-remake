@@ -22,6 +22,7 @@
     font-size: 40px;
   }
   .info {
+    cursor: default;
     text-align: justify;
     direction: rtl;
     padding: 60px;
