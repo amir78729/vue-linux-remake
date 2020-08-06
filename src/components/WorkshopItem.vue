@@ -75,9 +75,10 @@
     background-repeat: no-repeat;
     background-size: 250%;
     background-position: center;
+    filter: brightness(0.8);
   }
   .item-img:hover {
-    filter: brightness(0.8);
+    filter: brightness(1);
     background-size: 260%;
   }
   .button {
