@@ -1,30 +1,30 @@
 <template>
   <div>
-    <div class="header" :style="{backgroundImage: `url(${currentWorkshop.imageURL})`}">
-      <h1>{{ currentWorkshop.title }}</h1>
+    <div class="header" :style="{backgroundImage: `url(${selectedWorkshop.imageURL})`}">
+      <h1>{{ selectedWorkshop.title }}</h1>
     </div>
     <div class="info row" >
-      <div class="" style="width: 66%; padding: 10px" >
+      <div class="" style="width: 66%; padding: 30px 10px 5px 10px" >
         <h1 style="font-size: 30px; margin-top: 5px" class="presenters">درباره‌ کارگاه</h1>
-        <p class="about-workshop" style="cursor: default">{{ currentWorkshop.info }}</p>
+        <p class="about-workshop" style="cursor: default">{{ selectedWorkshop.info }}</p>
         <hr style="background-color: #e4b22b; width: calc(100% - 100px)">
         <h2 class="sub-header">زمان:</h2>
-        <p class="p-info">{{ currentWorkshop.time }}</p>
+        <p class="p-info">{{ selectedWorkshop.time }}</p>
         <hr style="background-color: #e4b22b; width: calc(100% - 100px)">
         <h2 class="sub-header">هزینه ثبت نام:</h2>
-        <p class="p-info">{{ currentWorkshop.price }}</p>
+        <p class="p-info">{{ selectedWorkshop.price }}</p>
         <button class="btn reg-btn" >ثبت نام</button>
       </div>
       <div class="right-panel" style="padding: 10px ; width: 34% ; min-width: 250px">
         <div class="presenters">
-          <h2 v-if="currentWorkshop.teacher.length === 1">ارائه دهنده</h2>
-          <h2 v-if="currentWorkshop.teacher.length !== 1"> ارائه دهنده ها</h2>
+          <h2 v-if="selectedWorkshop.teacher.length === 1">ارائه دهنده</h2>
+          <h2 v-if="selectedWorkshop.teacher.length !== 1"> ارائه دهنده ها</h2>
         </div>
         <div class="row d-flex justify-content-between">
           <button class="btn changeTeacher" @click="teacherIndexDecrement"><</button>
           <transition name="slide" mode="out-in">
             <app-teacher-info
-              :teachers="currentWorkshop.teacher"
+              :teachers="selectedWorkshop.teacher"
               :index="teacherIndex">
             </app-teacher-info>
           </transition>
@@ -32,7 +32,6 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-dark" @click="setCurrentWorkshop(workshopIndex)">k</button>
   </div>
 </template>
 
@@ -43,7 +42,7 @@
     components:{
       appTeacherInfo: TeacherInfo,
     },
-    props: ['data' , 'workshopIndex'],
+    props: ['data' , 'workshopIndex', 'selectedWorkshop'],
     data() {
       return {
         teacherIndex: 0,
@@ -54,7 +53,6 @@
           price:'',
           teacher: [],
           imageURL: '',
-
         },
       }
     },
@@ -133,6 +131,7 @@
 
 
   }
+
   .p-info{
     color: #FFFFFF;
     text-align: right;
@@ -155,6 +154,14 @@
   }
   .changeTeacher:hover {
     color: #e4b22b;
+  }
+  .reg-btn{
+    color: #FFFFFF;
+    background-color: #e4b22b;
+    height: 50px;
+    border-radius: 25px;
+    width: 200px;
+    margin: 40px;
   }
 
 

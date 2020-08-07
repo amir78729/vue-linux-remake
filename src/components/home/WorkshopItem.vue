@@ -11,15 +11,13 @@
             <h5 style="font-size: 15px" v-if="teachers.length === 1">مدرس :</h5>
             <h5 style="font-size: 15px" v-else>مدرسین :</h5>
           </div>
-<!--          <h5 style="font-size: 18px" v-for="name in names">{{ name }}</h5>-->
           <h5 style="font-size: 18px" v-for="teacher in teachers">{{ teacher.teacherName }}</h5>
         </div>
       </div>
       <div style="position: absolute; bottom: 0; width: calc(100% - 60px); align-content: center ; margin: 30px 0px 30px 30px">
-        <button dir="rtl" class="btn button" style="align-content: center"><span>توضیحات </span></button>
+        <button dir="rtl" class="btn button" style="align-content: center" @click="setWorkshop"><span>توضیحات </span></button>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -27,13 +25,15 @@
   export default {
     data() {
       return {
-        // hasOneTeacher: true,
-        // title: 'عنوان',
-        // names: ['name1', 'name2', 'name3'],
-        // imageURL: 'https://cdn.hipwallpaper.com/i/72/14/7qMgZu.jpg'
+        index: -1
       }
     },
-    props: ['title', 'imageURL', 'teachers']
+    props: ['title', 'imageURL', 'teachers', 'index'],
+    methods: {
+      setWorkshop(){
+        this.$emit('setIndex', this.index)
+      }
+    }
   }
 </script>
 

@@ -1,8 +1,10 @@
 <template>
   <div>
     <app-header style="position: fixed; width: 100%" class="always-on-top"></app-header>
-    <app-home :data="items"></app-home>
-    <app-workshop-component :data="items" :workshop-index="currentWorkshopIndex"></app-workshop-component>
+    <app-home
+      :data="items"
+      @setIndex="setWorkshopIndex($event)"></app-home>
+    <app-workshop-component :data="items" :workshop-index="currentWorkshopIndex" :selected-workshop="items[currentWorkshopIndex]"></app-workshop-component>
   </div>
 </template>
 
@@ -15,6 +17,7 @@
   import WorkshopComponent from "./components/workshop info/WorkshopComponent.vue"
 
   import Home from "./components/home/Home.vue";
+  import index from "./router";
 
   export default {
 
@@ -240,6 +243,11 @@
         ]
       }
     },
+    methods: {
+      setWorkshopIndex(index){
+        this.currentWorkshopIndex = index
+      }
+    }
 }
 </script>
 

@@ -5,11 +5,13 @@
 
     <h2 style="cursor: default">کارگاه‌ها و سخنرانی‌ها</h2>
     <div class="row align-content-center" style="padding: 0 80px 0 80px; justify-content: center">
-      <div class="col-md-6 col-sm-12" v-for="item in items">
+      <div class="col-md-6 col-sm-12" v-for="(item,index) in items">
         <grid-workshop-item
         :title="item.title"
         :imageURL="item.imageURL"
-        :teachers="item.teacher"></grid-workshop-item>
+        :teachers="item.teacher"
+        :index="index"
+        @setIndex="setIndex($event)"></grid-workshop-item>
       </div>
     </div>
   </div>
@@ -24,10 +26,16 @@
     },
     data() {
       return {
-
+        selectedWorkshop: -1,
       }
     },
-    props: ['items']
+    props: ['items'],
+    methods:{
+      setIndex(index){
+        this.selectedWorkshop = index;
+        this.$emit('setIndex', index)
+      }
+    }
   }
 </script>
 <style scoped>

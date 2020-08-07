@@ -2,7 +2,8 @@
   <div>
     <app-event-title></app-event-title>
     <app-about-event></app-about-event>
-    <app-workshop-grid :items="data"></app-workshop-grid>
+    <app-workshop-grid :items="data"
+    @setIndex="setIndex($event)"></app-workshop-grid>
     <app-snapp></app-snapp>
   </div>
 </template>
@@ -22,6 +23,11 @@
       appSnapp: Snapp,
       appWorkshopComponent: WorkshopComponent,
     },
+    methods: {
+      setIndex(index){
+        this.$emit('setIndex', index)
+      }
+    }
   }
 </script>
 
