@@ -3,11 +3,18 @@
     <div class="header" :style="{backgroundImage: `url(${currentWorkshop.imageURL})`}">
       <h1>{{ currentWorkshop.title }}</h1>
     </div>
-    <div class="info row">
-      <div class="col-sm-8 bg-info">
-
+    <div class="info row" >
+      <div class="" style="width: 66%; padding: 10px" >
+        <h1 style="font-size: 30px; margin-top: 5px" class="presenters">درباره‌ کارگاه</h1>
+        <p class="about-workshop" style="cursor: default">{{ currentWorkshop.info }}</p>
+        <hr style="background-color: #e4b22b; width: calc(100% - 100px)">
+        <h2 class="sub-header">زمان:</h2>
+        <p class="p-info">{{ currentWorkshop.time }}</p>
+        <hr style="background-color: #e4b22b; width: calc(100% - 100px)">
+        <h2 class="sub-header">هزینه ثبت نام:</h2>
+        <p class="p-info">{{ currentWorkshop.price }}</p>
       </div>
-      <div class="col-sm-4 " style="padding: 10px">
+      <div class="right-panel" style="padding: 10px ; width: 34% ; min-width: 250px">
         <div class="presenters">
           <h2 v-if="currentWorkshop.teacher.length === 1">ارائه دهنده</h2>
           <h2 v-if="currentWorkshop.teacher.length !== 1"> ارائه دهنده ها</h2>
@@ -18,14 +25,13 @@
             <app-teacher-info
               :teachers="currentWorkshop.teacher"
               :index="teacherIndex">
-
             </app-teacher-info>
           </transition>
           <button class="btn changeTeacher" @click="teacherIndexIncrement">></button>
         </div>
       </div>
     </div>
-    <button class="btn btn-dark" @click="setCurrentWorkshop(8)">k</button>
+    <button class="btn btn-dark" @click="setCurrentWorkshop(0)">k</button>
   </div>
 </template>
 
@@ -42,8 +48,12 @@
         teacherIndex: 0,
         currentWorkshop: {
           title: '',
+          info: '',
+          time:'',
+          price:'',
           teacher: [],
           imageURL: '',
+
         },
       }
     },
@@ -92,19 +102,48 @@
     padding-top: 90px;
   }
 
+  .right-panel{
+    border-left: solid #e4b22b 1px;
+    background-color: #521C39;
+    border-radius: 0px 30px 30px 0px;
+  }
+
   .info {
     background-color: #292929;
     margin: 50px;
     border-radius: 30px;
-
-    height: 500px;
+    min-height: 500px;
   }
+  .sub-header{
+    color: #e4b22b;
+    font-size: 25px;
+    direction: rtl;
+    text-align: right;
+    margin: 0 60px;
+    margin-bottom: 10px;
+    cursor: default;
+  }
+
   .presenters{
     cursor: default;
     color: #e4b22b;
     text-align: center;
     font-weight: bolder;
 
+
+  }
+  .p-info{
+    color: #FFFFFF;
+    text-align: right;
+    margin: 0 50px;
+    cursor: default;
+
+  }
+  .about-workshop {
+    color: #FFFFFF;
+    white-space-treatment: none;
+    padding: 0 50px;
+    text-align: justify;
   }
   .presenters h2{
     font-size: 28px;

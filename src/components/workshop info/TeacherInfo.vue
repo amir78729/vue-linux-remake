@@ -18,7 +18,7 @@
     props:['teachers', 'index']
   }
 </script>
-<style>
+<style scoped>
   .pic {
     justify-content: center;
     height: 150px;
@@ -29,10 +29,12 @@
     background-size: 150%;
     background-repeat: no-repeat;
     /*background-attachment: scroll;*/
-    margin: 5px;
+    /*margin: 5px;*/
     align-content: center;
     text-align: center;
     transition: 0.5s;
+    margin-left: 15px;
+    margin-bottom: 10px;
   }
   .pic:hover{
     background-size: 155%;

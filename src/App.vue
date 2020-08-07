@@ -34,6 +34,47 @@
         items: [
           {
             title: 'مقدماتی',
+            info: 'Day 1:\n' +
+              'What is linux\n' +
+              'History of linux\n' +
+              'Linux distributions\n' +
+              'Installing linux on a virtual machine\n' +
+              'Day 2:\n' +
+              'Linux directory structure\n' +
+              'using shell\n' +
+              'shell builtins and aliases\n' +
+              'ENV variables\n' +
+              'finding your way in shell ( man and help )\n' +
+              'commonly used shell commands\n' +
+              'manipulating files and directories\n' +
+              'list files and directories\n' +
+              'finding and searching for files\n' +
+              'deleting, copying and moving files\n' +
+              'wildcards\n' +
+              'permissions\n' +
+              'working with text files\n' +
+              'reading and processing text files\n' +
+              'editing text files and streams\n' +
+              'I/O and redirection\n' +
+              'Day 3:\n' +
+              'Installing and managing packages\n' +
+              'using apt\n' +
+              'dpkg and it\'s usages\n' +
+              'Users and Groups\n' +
+              'Cron and automation\n' +
+              'cron jobs\n' +
+              'rc files\n' +
+              'Manipulating processes\n' +
+              'process structure\n' +
+              'killing a process\n' +
+              'start a job in the background\n' +
+              'Networking',
+            time: '1. چهارشنبه 1398/11/30 | ساعت: 16:00 تا 19:00\n' +
+              '\n' +
+              '2. پنج‌شنبه 1398/12/01 | ساعت: 09:30 تا 17:00\n' +
+              '\n' +
+              '3. جمعه 1398/12/02 | ساعت: 09:30 تا 17:00',
+            price: '500000 ریال',
             teacher: [
               {
                 teacherName: 'علیرضا بختیاری',
@@ -55,6 +96,9 @@
           },
           {
             title: 'Docker',
+            info: '',
+            time: '',
+            price: '',
             teacher: [
               {
                 teacherName: 'احمد انواری',
@@ -66,6 +110,9 @@
           },
           {
             title: 'Cloud: A solution to infrastructure problem',
+            info: '',
+            time: '',
+            price: '',
             teacher: [
               {
                 teacherName: 'محمد کریمی',
@@ -77,6 +124,9 @@
           },
           {
             title: 'Kernel',
+            info: '',
+            time: '',
+            price: '',
             teacher: [
               {
                 teacherName: 'بهادر بخشی',
@@ -88,6 +138,9 @@
           },
           {
             title: 'Penetration Testing with Kali Linux',
+            info: '',
+            time: '',
+            price: '',
             teacher: [
               {
                 teacherName: 'احسان عدالت',
@@ -99,6 +152,9 @@
           },
           {
             title: 'Virtualization',
+            info: '',
+            time: '',
+            price: '',
             teacher: [
               {
                 teacherName: 'پرهام الوانی',
@@ -110,6 +166,9 @@
           },
           {
             title: 'Container Orchestration in Cloud',
+            info: '',
+            time: '',
+            price: '',
             teacher: [
               {
                 teacherName: 'امید رجب‌آقا',
@@ -121,6 +180,9 @@
           },
           {
             title: 'اسنپ‌کلود:‌ دلایل بنیادین و نحوه ساخت',
+            info: '',
+            time: '',
+            price: '',
             teacher: [
               {
                 teacherName: 'حسین مرادقلی',
@@ -132,6 +194,9 @@
           },
           {
             title: 'Service Discovery',
+            info: '',
+            time: '',
+            price: '',
             teacher: [
               {
                 teacherName: 'محمد عبدلی‌راد',
