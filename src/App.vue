@@ -1,36 +1,35 @@
 <template>
   <div>
     <app-header style="position: fixed; width: 100%" class="always-on-top"></app-header>
-<!--    <app-event-title></app-event-title>-->
-<!--    <app-about-event></app-about-event>-->
-<!--    <app-workshop-grid :items="items"></app-workshop-grid>-->
-<!--    <app-snapp></app-snapp>-->
-    <app-workshop-component :data="items"></app-workshop-component>
+    <app-home :data="items"></app-home>
+    <app-workshop-component :data="items" :workshop-index="currentWorkshopIndex"></app-workshop-component>
   </div>
 </template>
 
 <script>
   import Header from "./components/Header.vue";
-  import EventTitle from "./components/EventTitle.vue";
-  import AboutEvent from "./components/AboutEvent.vue";
-  import WorkshopGrid from "./components/WorkshopGrid.vue";
-  import Snapp from "./components/Snapp.vue";
+  // import EventTitle from "./components/home/EventTitle.vue";
+  // import AboutEvent from "./components/home/AboutEvent.vue";
+  // import WorkshopGrid from "./components/home/WorkshopGrid.vue";
+  // import Snapp from "./components/home/Snapp.vue";
   import WorkshopComponent from "./components/workshop info/WorkshopComponent.vue"
 
-
+  import Home from "./components/home/Home.vue";
 
   export default {
 
     components: {
       appHeader: Header,
-      appEventTitle: EventTitle,
-      appAboutEvent: AboutEvent,
-      appWorkshopGrid: WorkshopGrid,
-      appSnapp: Snapp,
+      // appEventTitle: EventTitle,
+      // appAboutEvent: AboutEvent,
+      // appWorkshopGrid: WorkshopGrid,
+      // appSnapp: Snapp,
       appWorkshopComponent: WorkshopComponent,
+      appHome: Home,
     },
     data() {
       return {
+        currentWorkshopIndex: 1,
         items: [
           {
             title: 'مقدماتی',
@@ -96,9 +95,9 @@
           },
           {
             title: 'Docker',
-            info: '',
-            time: '',
-            price: '',
+            info: 'یکی از روش های امن و مطمئن برای توسعه، تست و دیپلوی نرم افزار، استفاده از کانتینر (همان ماشین مجازی سبک و دوست داشتنی) است. داکر به عنوان محبوب ترین و پر استفاده ترین پلتفرم مدیریت کانتینرها در دنیای تکنولوژی امروز ، شما را قادر می سازد تا نرم افزارهای خود را در محیط هایی ایزوله برای اجرا بسته بندی کنید و بتوانید آن ها را با کمترین دردسر بر روی ماشین های مختلف بدون کوچکترین تغییری در رفتار نرم افزارتان اجرا کنید. در این کارگاه پس از آشنایی ابتدایی با مفهوم کانتینر، مفاهیم اصلی داکر را می آموزیم و آن ها را در مثال هایی عملی بر روی اپلیکیشن های مختلف اعمال می کنیم.',
+            time: '1. چهارشنبه 1398/11/30 | ساعت: 10:00 تا 16:00n',
+            price: '300000 ریال',
             teacher: [
               {
                 teacherName: 'احمد انواری',
@@ -110,9 +109,9 @@
           },
           {
             title: 'Cloud: A solution to infrastructure problem',
-            info: '',
-            time: '',
-            price: '',
+            info: 'فراهم کردن زیرساخت مناسب از ملزومات اساسی برنامه های مبتنی بر شبکه میباشند. در این ارائه به بررسی راه حل های متفاوتی که برای این مسئله ارائه شده می پردازیم تا به درک بهتری از جایگاه امروز کلاود در تکنولوژی برسیم. علاوه بر این به بررسی چالش ها و فرصت های این زمینه و پیشرفت های پیشگام این صنعت در ایران خواهیم پرداخت.',
+            time: '1. پنج‌شنبه 1398/12/01 | ساعت: 10:00 تا 10:30',
+            price: 'رایگان',
             teacher: [
               {
                 teacherName: 'محمد کریمی',
@@ -124,9 +123,14 @@
           },
           {
             title: 'Kernel',
-            info: '',
-            time: '',
-            price: '',
+            info: 'Basic concepts (user space, kernel space, kernel image, kernel modules, ...)\n' +
+              'Kernel architecture\n' +
+              'Kernel configuration, compile, and installation\n' +
+              'Kernel source code\n' +
+              'Sample module development\n' +
+              'Device drivers',
+            time: 'پنج‌شنبه 1398/12/01 | ساعت: 10:00 تا 17:30',
+            price: '400000 ریال',
             teacher: [
               {
                 teacherName: 'بهادر بخشی',
@@ -138,9 +142,19 @@
           },
           {
             title: 'Penetration Testing with Kali Linux',
-            info: '',
-            time: '',
-            price: '',
+            info: 'معرفی Kali\n' +
+              'معرفی تست نفوذ\n' +
+              'معرفی حملات مختلف\n' +
+              'اجرای عملی سناریوهای مختلف حمله\n' +
+              'معرفی ابزارهای موجود در Kali برای تست نفوذ\n' +
+              'ابزارهای شناسایی و جمع آوری اطلاعات (NMap)\n' +
+              'ابزارهای شناسایی آسیب پذیری ها\n' +
+              'معرفی MetaSploit\n' +
+              'معرفی حملات تحت وب (SQL Injection, XSS, LFI, RFI)\n' +
+              'معرفی BurpSuit\n' +
+              'معرفی ابزارهای شناسایی گذرواژه',
+            time: 'جمعه 1398/12/02 | ساعت: 10:00 تا 15:30',
+            price: '300000 ریال',
             teacher: [
               {
                 teacherName: 'احسان عدالت',
@@ -152,9 +166,9 @@
           },
           {
             title: 'Virtualization',
-            info: '',
-            time: '',
-            price: '',
+            info: 'در این ارائه به معرفی مجازی‌سازی، تکنولوژی‌های آن و چگونگی مدیریت کردن آن پرداخته می‌شود.',
+            time: 'پنج‌شنبه 1398/12/01 | ساعت: 10:30 تا 11:00',
+            price: 'رایگان',
             teacher: [
               {
                 teacherName: 'پرهام الوانی',
@@ -166,9 +180,10 @@
           },
           {
             title: 'Container Orchestration in Cloud',
-            info: '',
-            time: '',
-            price: '',
+            info: 'در این ارائه به مفاهیم و علل استفاده از کانتینر ارکستریشن و کلاد بر پایه ابزارهایی مانند کوبرنتیس اشاره خواهد شد.\n' +
+              'همچنین به بررسی بهبود عملکرد، راه اندازی و تست نرم افزارها در زیرساخت مبتنی بر کلود خواهیم پرداخت.',
+            time: 'جمعه 1398/12/02 | ساعت: 10:30 تا 11:00',
+            price: 'رایگان',
             teacher: [
               {
                 teacherName: 'امید رجب‌آقا',
@@ -180,9 +195,9 @@
           },
           {
             title: 'اسنپ‌کلود:‌ دلایل بنیادین و نحوه ساخت',
-            info: '',
-            time: '',
-            price: '',
+            info: 'مسیر پر فراز و نشیب اسنپ از ابتدا تا امروز با حدود ۲ میلیون سفر روزانه پیچیدگی های فنی زیادی در حوزه زیرساخت داشته است. در این ارائه کوتاه در مورد مسیر و دلایل اصلی ما برای انتخاب تکنولوژی های آینده زیرساخت اختصاصی اسنپ صحبت میکنیم و تجربیات مجموعه رو با شما در میان می‌گذاریم.',
+            time: 'جمعه 1398/12/02 | ساعت: 10:00 تا 10:30',
+            price: 'رایگان',
             teacher: [
               {
                 teacherName: 'حسین مرادقلی',
@@ -194,9 +209,20 @@
           },
           {
             title: 'Service Discovery',
-            info: '',
-            time: '',
-            price: '',
+            info: 'این ارائه تلاشی است برای تبادل تجربه درباره نیاز به service discovery در محیط‌های با مقیاس بزرگ و آشنایی با ابزار Consul یکی از محصولات شرکت HashiCorp\n' +
+              '\n' +
+              'What is service discovery, and why do you need it\n' +
+              'Comparing Service Discovery Tools\n' +
+              'Why Consul?\n' +
+              'Architecture of Consul\n' +
+              'The key features of Consul\n' +
+              'Service Discovery\n' +
+              'Health Checking\n' +
+              'KV Store\n' +
+              'Secure Service Communication\n' +
+              'Multi Datacenter\n',
+            time: ' جمعه 1398/12/02 | ساعت: 11:00 تا 12:00',
+            price: 'رایگان',
             teacher: [
               {
                 teacherName: 'محمد عبدلی‌راد',

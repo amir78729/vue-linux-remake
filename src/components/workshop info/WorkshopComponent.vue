@@ -13,6 +13,7 @@
         <hr style="background-color: #e4b22b; width: calc(100% - 100px)">
         <h2 class="sub-header">هزینه ثبت نام:</h2>
         <p class="p-info">{{ currentWorkshop.price }}</p>
+        <button class="btn reg-btn" >ثبت نام</button>
       </div>
       <div class="right-panel" style="padding: 10px ; width: 34% ; min-width: 250px">
         <div class="presenters">
@@ -31,7 +32,7 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-dark" @click="setCurrentWorkshop(0)">k</button>
+    <button class="btn btn-dark" @click="setCurrentWorkshop(workshopIndex)">k</button>
   </div>
 </template>
 
@@ -42,7 +43,7 @@
     components:{
       appTeacherInfo: TeacherInfo,
     },
-    props: ['data'],
+    props: ['data' , 'workshopIndex'],
     data() {
       return {
         teacherIndex: 0,
