@@ -13,7 +13,10 @@
         <hr style="background-color: #e4b22b; width: calc(100% - 100px)">
         <h2 class="sub-header">هزینه ثبت نام:</h2>
         <p class="p-info">{{ selectedWorkshop.price }}</p>
-        <button class="btn reg-btn" >ثبت نام</button>
+        <div>
+          <button class="btn reg-btn" >ثبت نام</button>
+          <button class="btn reg-btn" @click="goBack">بازگشت</button>
+        </div>
       </div>
       <div class="right-panel" style="padding: 10px ; width: 34% ; min-width: 250px">
         <div class="presenters">
@@ -57,8 +60,8 @@
       }
     },
     methods: {
-      setCurrentWorkshop(index) {
-        this.currentWorkshop = this.data[index];
+      goBack() {
+        this.$emit("goBack");
       },
       teacherIndexIncrement(){
         if (this.teacherIndex !== this.currentWorkshop.teacher.length-1)
@@ -151,6 +154,7 @@
   }
   .changeTeacher {
     color: #FFFFFF;
+    outline: none;
   }
   .changeTeacher:hover {
     color: #e4b22b;
