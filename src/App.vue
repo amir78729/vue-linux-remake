@@ -13,12 +13,14 @@
         v-else
         @goBack="isHome = true"></app-workshop-component>
     </transition>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
   import Header from "./components/Header.vue";
   import WorkshopComponent from "./components/workshop info/WorkshopComponent.vue"
+  import Footer from "./components/Footer.vue"
 
   import Home from "./components/home/Home.vue";
   import index from "./router";
@@ -29,6 +31,7 @@
       appHeader: Header,
       appWorkshopComponent: WorkshopComponent,
       appHome: Home,
+      appFooter: Footer,
     },
     data() {
       return {
