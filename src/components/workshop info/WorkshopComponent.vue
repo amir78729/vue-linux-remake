@@ -91,6 +91,7 @@
     /*position: relative;*/
   }
   .header:hover{
+    box-shadow: 0 0 200px 0 black inset;
     font-size: 40px;
     background-size: 105%;
   }

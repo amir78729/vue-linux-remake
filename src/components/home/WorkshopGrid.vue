@@ -1,5 +1,5 @@
 <template>
-  <div style="    border-bottom:5px solid rgb(242,169,56);">
+  <div style="    border-bottom:5px solid rgb(242,169,56);" class="bg">
 
 <!--    <h1>{{items}}</h1>-->
 
@@ -40,10 +40,14 @@
 </script>
 <style scoped>
   h2 {
-    margin: 50px;
+    padding: 50px;
     font-size: 36px;
     color: #521C39;
     text-align: center;
     font-weight: bolder;
+  }
+  .bg {
+    background-color: #FFFFFF;
+
   }
 </style>
