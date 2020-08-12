@@ -156,6 +156,10 @@
     color: #FFFFFF;
     outline: none;
   }
+  .changeTeacher:focus {
+    outline: none;
+    box-shadow: none;
+  }
   .changeTeacher:hover {
     color: #e4b22b;
   }

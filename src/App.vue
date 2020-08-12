@@ -259,6 +259,7 @@
 <style>
   body {
     font-family: 'iransans';
+    background-color: #191919;
   }
   .always-on-top {
     z-index: 999999 !important;
